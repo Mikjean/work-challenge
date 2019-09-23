@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  Route::put('/studentupdate/{id}', "APIcontroller@updateStudent");
  Route::delete('/studentdelete/{id}', "APIcontroller@deleteStudent");
 
- // user authentication routes
+ // user authentication/ Registering/ and retrieve his setails from token 
 
  Route::post('login', 'UserController@login');
  Route::any('register', 'UserController@register');
